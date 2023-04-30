@@ -7,7 +7,7 @@ function KidsMeal({ data }) {
       <p className="text-center text-green-700 text-3xl md:text-4xl font-light my-5">
         Kids Meal
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-2  md:px-32 lg:px-56">
+      <div className="grid grid-cols-2 md:grid-cols-2  sm:px-16 md:px-32 lg:px-56">
         {data
           .filter((d) => {
             return d.category === "kids";

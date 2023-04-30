@@ -286,7 +286,10 @@ function Item(props) {
                   return d.category === "crusts";
                 })
                 .map((c, i) => (
-                  <label className="relative mx-2 w-1/3 md:w-1/6" key={c._id}>
+                  <label
+                    className="relative mx-2 w-1/3 sm:w-1/5 md:w-1/6"
+                    key={c._id}
+                  >
                     <input
                       ref={(item) => (radio.current[i] = item)}
                       type="radio"
@@ -320,7 +323,7 @@ function Item(props) {
                     })
                     .map((f, i) => (
                       <label
-                        className="relative mx-2 shrink-0 w-1/3 md:w-1/6"
+                        className="relative mx-2 shrink-0 w-1/3 sm:w-1/5 md:w-1/6"
                         key={f._id}
                       >
                         <input
@@ -361,7 +364,7 @@ function Item(props) {
                 })
                 .map((e, i) => (
                   <label
-                    className="relative mx-2 shrink-0 w-1/3 md:w-1/6"
+                    className="relative mx-2 shrink-0 w-1/3 sm:w-1/5 md:w-1/6"
                     key={e._id}
                   >
                     <input
@@ -407,7 +410,7 @@ function Item(props) {
                 })
                 .map((d, i) => (
                   <label
-                    className="relative mx-2 shrink-0  w-1/3 md:w-1/6"
+                    className="relative mx-2 shrink-0  w-1/3 sm:w-1/5 md:w-1/6"
                     key={d._id}
                   >
                     <input
@@ -456,7 +459,7 @@ function Item(props) {
                 })
                 .map((d, i) => (
                   <label
-                    className="relative mx-2 shrink-0 w-1/3 md:w-1/6"
+                    className="relative mb-32 mx-2 shrink-0 w-1/3 sm:w-1/5 md:w-1/6"
                     key={d._id}
                   >
                     <input

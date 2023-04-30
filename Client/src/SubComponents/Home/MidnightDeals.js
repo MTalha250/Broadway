@@ -7,7 +7,7 @@ function MidnightDeals({ data }) {
       <p className="text-center text-green-700 text-3xl md:text-4xl font-light my-5">
         Midnight Deals
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 md:px-10 lg:px-32">
+      <div className="grid grid-cols-2 md:grid-cols-3 sm:px-10 lg:px-32">
         {data
           .filter((d) => {
             return d.category === "midnight";

@@ -45,7 +45,7 @@ function App() {
       <Router>
         <Nav getCart={openCart} />
         <Cart open={cart} getCart={closeCart} />
-        <div className="mt-20 md:mt-0">
+        <div className="mt-[65px] md:mt-0">
           <Routes>
             <Route path="/" element={<Home data={data} />} />
             <Route path="/order" element={<Order data={data} />} />

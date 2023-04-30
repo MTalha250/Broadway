@@ -39,7 +39,7 @@ function Nav(props) {
 
   return (
     <div>
-      <div className="z-20 bg-white w-full fixed top-0 flex justify-between py-2 px-3 md:border-b md:shadow-2xl md:shadow-white">
+      <div className="z-20 bg-white w-full fixed top-0 flex justify-between py-1 sm:py-2 px-3 border-b shadow-2xl shadow-white">
         <div className="flex items-center text-gray-500">
           <button
             className="md:hidden scale-125 mr-2"
