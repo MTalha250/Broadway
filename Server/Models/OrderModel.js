@@ -6,6 +6,7 @@ var orderSchema = new Schema({
   no: Number,
   address: String,
   instructions: String,
+  price: Number,
   order: {
     type: Array,
     items: {
@@ -22,7 +23,6 @@ var orderSchema = new Schema({
       img: String,
       id: String,
     },
-    price: Number,
   },
 });
 

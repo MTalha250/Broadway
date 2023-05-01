@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { UserContext } from "../Context/UserContext";
 import { CartContext } from "../Context/CartContext";
 import { useFormik } from "formik";
@@ -17,6 +17,12 @@ function Checkout() {
   const [userData, setUserData] = useContext(UserContext);
   const [cartData, setCartData] = useContext(CartContext);
   const navigate = useNavigate();
+
+  const handleTotal = () => {
+    let total = 0;
+    cartData.map((item) => (total = total + item.tprice));
+    return total;
+  };
 
   const { values, errors, handleChange, handleSubmit, handleBlur, touched } =
     useFormik({
@@ -42,12 +48,6 @@ function Checkout() {
         localStorage.removeItem("cart");
       },
     });
-
-  const handleTotal = () => {
-    let total = 0;
-    cartData.map((item) => (total = total + item.tprice));
-    return total;
-  };
 
   return (
     <div className="flex flex-col md:flex-row w-full px-5 lg:px-10">
