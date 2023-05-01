@@ -33,6 +33,7 @@ function Checkout() {
           {
             ...values,
             order: cartData,
+            price: handleTotal(),
           }
         );
         toast(resData.data.message);

@@ -22,6 +22,7 @@ var orderSchema = new Schema({
       img: String,
       id: String,
     },
+    price: Number,
   },
 });
 
