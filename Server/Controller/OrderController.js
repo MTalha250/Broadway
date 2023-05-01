@@ -1,3 +1,4 @@
+const OrderModel = require("../Models/OrderModel");
 const orderModel = require("../Models/OrderModel");
 
 module.exports = {
@@ -15,5 +16,14 @@ module.exports = {
     orderModel.find().then((results) => {
       res.send(results);
     });
+  },
+  delete: function (req, res) {
+    OrderModel.findByIdAndDelete(req.params.id)
+      .then(() => {
+        res.send({ message: "Order Deleted" });
+      })
+      .catch((err) => {
+        res.send("Something went wrong!!!!" + err);
+      });
   },
 };
