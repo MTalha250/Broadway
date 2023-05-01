@@ -184,7 +184,7 @@ function Item(props) {
       >
         <div className="w-full h-full md:w-[90%] md:h-[90%] lg:w-3/4 lg:h-4/5 bg-white shadow-2xl shadow-black p-3 flex flex-col md:flex-row relative overflow-y-scroll">
           <button
-            className="fixed md:absolute bg-yellow-500 font-bold px-6 py-3 rounded-full right-5 bottom-5 shadow-2xl z-50 text-sm"
+            className="fixed md:absolute bg-yellow-500 font-bold px-6 py-3 rounded-full right-5 bottom-14 shadow-2xl z-50 text-sm"
             onClick={handleAddToCart}
           >
             ADD TO ORDER <AddShoppingCartIcon />

@@ -77,8 +77,11 @@ function Cart(props) {
                 </p>
                 <Link
                   to="/checkout"
-                  onClick={handleCart}
-                  className="w-full text-center bg-yellow-500 py-2 border-x-4 border-white rounded-full absolute bottom-1 left-0 font-bold"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    handleCart();
+                  }}
+                  className="w-full text-center bg-yellow-500 py-2 border-x-4 border-white rounded-full absolute bottom-8 left-0 font-bold"
                 >
                   Continue &nbsp;
                   <EastIcon />

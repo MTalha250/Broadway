@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
@@ -7,6 +7,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 import { UserContext } from "../Context/UserContext";
+
 const loginSchema = Yup.object({
   email: Yup.string().email().required("Plaese Enter Your Email"),
   password: Yup.string().required("Please Enter Your Password"),
@@ -20,6 +21,10 @@ const initialValues = {
 function LogIn() {
   const [password, setPassword] = useState(true);
   const [userData, setUserData] = useContext(UserContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const navigate = useNavigate();
   const { values, errors, handleChange, handleSubmit, handleBlur, touched } =
