@@ -39,7 +39,7 @@ function Checkout() {
           {
             ...values,
             order: cartData,
-            price: handleTotal(),
+            price: handleTotal() + Math.round(handleTotal() * 0.16) + 50,
           }
         );
         toast(resData.data.message);
