@@ -102,9 +102,9 @@ function SignUp() {
               }}
             >
               {password ? (
-                <VisibilityOutlinedIcon />
-              ) : (
                 <VisibilityOffOutlinedIcon />
+              ) : (
+                <VisibilityOutlinedIcon />
               )}
             </span>
           </div>
@@ -131,9 +131,9 @@ function SignUp() {
               }}
             >
               {Cpassword ? (
-                <VisibilityOutlinedIcon />
-              ) : (
                 <VisibilityOffOutlinedIcon />
+              ) : (
+                <VisibilityOutlinedIcon />
               )}
             </span>
           </div>

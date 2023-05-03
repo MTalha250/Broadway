@@ -16,6 +16,10 @@ function AddProduct() {
     category: "",
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();

@@ -85,9 +85,9 @@ function LogIn() {
               }}
             >
               {password ? (
-                <VisibilityOutlinedIcon />
-              ) : (
                 <VisibilityOffOutlinedIcon />
+              ) : (
+                <VisibilityOutlinedIcon />
               )}
             </span>
           </div>

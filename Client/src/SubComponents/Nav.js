@@ -126,13 +126,37 @@ function Nav(props) {
                 {userData.email === "talhabinay@gmail.com" && (
                   <Link
                     to="/addProduct"
-                    className="text-sm p-1 block whitespace-nowrap"
+                    className="text-sm p-1 block whitespace-nowrap text-start border-b"
                     onClick={() => {
                       setLogin(false);
                       handleLogout();
                     }}
                   >
                     Add Product
+                  </Link>
+                )}
+                {userData.email === "talhabinay@gmail.com" && (
+                  <Link
+                    to="/orders"
+                    className="text-sm p-1 block whitespace-nowrap text-start border-b"
+                    onClick={() => {
+                      setLogin(false);
+                      handleLogout();
+                    }}
+                  >
+                    Orders
+                  </Link>
+                )}
+                {userData.email === "talhabinay@gmail.com" && (
+                  <Link
+                    to="/users"
+                    className="text-sm p-1 block whitespace-nowrap text-start"
+                    onClick={() => {
+                      setLogin(false);
+                      handleLogout();
+                    }}
+                  >
+                    Users
                   </Link>
                 )}
               </div>

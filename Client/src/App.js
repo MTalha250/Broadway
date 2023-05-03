@@ -16,6 +16,8 @@ import { UserContext } from "./Context/UserContext";
 import { CartContext } from "./Context/CartContext";
 import Checkout from "./PageComponents/Checkout";
 import jwt_decode from "jwt-decode";
+import Orders from "./PageComponents/Orders";
+import Users from "./PageComponents/Users";
 
 function App() {
   const [cart, setCart] = useState("translate-y-full");
@@ -56,6 +58,8 @@ function App() {
             {UsertData?.email && (
               <Route path="/addProduct" element={<AddProduct />} />
             )}
+            {UsertData?.email && <Route path="/orders" element={<Orders />} />}
+            {UsertData?.email && <Route path="/users" element={<Users />} />}
             {UsertData?.email && cartData.length > 0 && (
               <Route path="/checkout" element={<Checkout />} />
             )}

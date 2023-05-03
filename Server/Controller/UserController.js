@@ -45,4 +45,19 @@ module.exports = {
       }
     });
   },
+  getAll: function (req, res) {
+    userModel.find().then((results) => {
+      res.send(results);
+    });
+  },
+  delete: function (req, res) {
+    userModel
+      .findByIdAndDelete(req.params.id)
+      .then(() => {
+        res.send({ message: "User Deleted" });
+      })
+      .catch((err) => {
+        res.send("Something went wrong!!!!" + err);
+      });
+  },
 };
