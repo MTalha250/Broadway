@@ -35,8 +35,8 @@ function Users() {
           <th className="border-2 border-black p-1 bg-yellow-500">
             Phone Number
           </th>
-          <th className="border-2 border-black p-1 bg-yellow-500">Address</th>
           <th className="border-2 border-black p-1 bg-yellow-500">Password</th>
+          <th className="border-2 border-black p-1 bg-yellow-500">Address</th>
           <th className="border-2 border-black p-1 bg-yellow-500">Delete</th>
         </tr>
         {data.map((d, i) => (
@@ -44,10 +44,10 @@ function Users() {
             <td className="border-2 border-black p-1">{i + 1}</td>
             <td className="border-2 border-black p-1">{d.name}</td>
             <td className="border-2 border-black p-1">{d.no}</td>
-            <td className="border-2 border-black p-1">{d.address}</td>
-            <td className="border-2 border-black p-1 text-start">
-              {d.password}
+            <td className="border-2 border-black p-1">
+              {d.password.slice(0, 20)}...
             </td>
+            <td className="border-2 border-black p-1">{d.address}</td>
             <td className="border-2 border-black p-1">
               <DeleteForeverIcon
                 className="cursor-pointer"
