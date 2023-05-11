@@ -44,7 +44,7 @@ function Item(props) {
       }
 
       if (itemData.extra) {
-        price = price + 150;
+        price = price + 160;
       }
       if (!props.drink && itemData.drink) {
         price = price + 50;
