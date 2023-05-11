@@ -38,7 +38,7 @@ function Item(props) {
     const dataSave = () => {
       let price = props.price;
       if (itemData.size === "10 Inch Medium") {
-        price = 944;
+        price = 994;
       } else if (itemData.size === "13 Inch Large") {
         price = 1259;
       }
