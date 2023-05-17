@@ -68,7 +68,7 @@ function Checkout() {
             placeholder="Type your name here..."
           />
           {errors.name && touched.name ? (
-            <p className="text-xs text-red-600">{errors.email}</p>
+            <p className="text-xs text-red-600">{errors.name}</p>
           ) : null}
           <label htmlFor="no" className="text-cyan-600 mb-2">
             Phone Number:
