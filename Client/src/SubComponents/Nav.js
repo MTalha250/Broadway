@@ -92,7 +92,7 @@ function Nav(props) {
                   setLogin((login) => !login);
                 }}
               >
-                {userData.name[0]}
+                {userData?.name[0]}
               </span>
             )}
 
